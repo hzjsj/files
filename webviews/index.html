@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文件下载</title>
+    <link rel="stylesheet" href="https://www.layuicdn.com/layui/css/layui.css">
+    <script src="//imgcache.qq.com/qcloud/tcbjs/1.5.0/tcb.js"></script>
+    <script src="https://www.layuicdn.com/layui/layui.js"></script>
+    <script src="./js/index.js"></script>
+    <style>
+        .k_body {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="k_body">
+        <blockquote class="layui-elem-quote">文件管理</blockquote>
+        <button type="button" class="layui-btn" id="test1">
+            <i class="layui-icon">&#xe67c;</i>上传文件
+        </button>
+
+        <table class="layui-table">
+            <colgroup>
+                <col>
+                <col width="200">
+                <col width="200">
+                <col width="200">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>文件名称</th>
+                    <th>创建时间</th>
+                    <th>下载次数</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="FileList">
+
+            </tbody>
+        </table>
+    </div>
+    <script>
+        function onLoad() {
+            getFiles()
+        }
+    </script>
+</body>
+
+</html>

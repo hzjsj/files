@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.layuicdn.com/layui/css/layui.css">
+    <script src="//imgcache.qq.com/qcloud/tcbjs/1.5.0/tcb.js"></script>
+    <script src="https://www.layuicdn.com/layui/layui.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        const id = getQueryVariable('id');
+        function onLoad() {
+            getFile()
+           files_old()
+        }
+       
+    </script>
+    <style>
+        .k_top {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<form class="layui-form k_top" action="" lay-filter="formTest">
+    <div class="layui-form-item">
+        <label class="layui-form-label">文件名称</label>
+        <div class="layui-input-inline">
+            <input type="text" name="name" required lay-verify="required" placeholder="请输入名称" autocomplete="off"
+                class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">创建时间</label>
+        <div class="layui-input-inline">
+            <input type="text" name="createTime" readonly required lay-verify="required" placeholder="请输入创建时间"
+                autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">下载次数</label>
+        <div class="layui-input-inline">
+            <input type="text" name="download" readonly required lay-verify="required" placeholder="请输入下载次数"
+                autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">文件地址</label>
+        <div class="layui-input-inline">
+            <input name="fileID" id="LAY_avatarSrc" readonly placeholder="文件地址" class="layui-input">
+        </div>
+        <div class="layui-input-inline layui-btn-container" style="width: auto;">
+            <button type="button" class="layui-btn layui-btn-primary" id="test3">
+                <i class="layui-icon">&#xe67c;</i>上传文件
+            </button>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+</form>
+<table class="layui-table">
+    <colgroup>
+        <col>
+        <col width="200">
+        <col width="160">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>文件名称</th>
+            <th>创建时间</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody id="Files">
+
+    </tbody>
+</table>
+<body>
+
+</body>
+
+</html>
