@@ -42,7 +42,7 @@ git clone https://github.com/hzjsj/files.git
 ```
 - 用代码工具打开项目目录，将以下文件中标注有【云开发环境ID】处替换成自己的云开发环境ID -- /cloudbaserc.js 第2行 -- webviews/js/index.js 第1行 -- function/getTempFileURL/index.js 第5行
 
-- 进入[环境设置控制页](https://console.cloud.tencent.com/tcb/env/setting)-登录方式下，找到自定义登入，点击私钥复制，将复制内容配置到webviews/login/index.js文件中
+- 进入[环境设置控制页](https://console.cloud.tencent.com/tcb/env/setting)-登录方式下，找到自定义登入，点击私钥复制，functions/login/config.js文件中
 
 ##### 四、上传并部署云函数
 - 使用CloudBase CLI工具登录后，进入files/目录，依次执行以下代码： ::: warning注意：envID 替换成自己的云开发环境ID:::
