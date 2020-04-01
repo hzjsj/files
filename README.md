@@ -51,7 +51,7 @@ tcb functions:deploy -e envID getTempFileURL
 tcb functions:deploy -e envID login
 tcb service:create -e envID -p /login -f login
 ```
-- 上面最后两行部署云函数，最后一行是为 login云函数创建HTTP服务
+- 上面两行是部署云函数，最后一行是为 login云函数创建HTTP服务
 
 ##### 五、本地运行、部署
 - 进入webviews
