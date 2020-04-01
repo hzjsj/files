@@ -62,6 +62,7 @@ cd webviews
 ``` bash
 npx serve
 ```
+进入[环境设置控制页](https://console.cloud.tencent.com/tcb/env/setting)-安全配置下，找到WEB安全域名，点击添加域名，授权localhost:5000这个域名，部署时也需要授权安全域名
 即可打开一个本地静态服务器，然后访问 http://localhost:5000
 - 部署到网站托管
 ``` bash
